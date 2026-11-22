@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BY IFRAA STUDIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>BY IFRAA STUDIO</h1>
+        <p>A LITTLE SPACE FOR YOUR MEMORIES</p>
+    </header>
+
+    <main class="main-container">
+
+        <section class="left-side">
+            <h2>YOUR MOMENT</h2>
+            <p>Capture your beautiful memories</p>
+
+            <div class="photo-area">
+
+                <img src="image-removebg-preview (88).png" class="cd" alt="CD">
+
+                <div class="polaroid">
+
+                    <video id="camera" autoplay muted playsinline></video>
+
+                    <div id="countdown"></div>
+
+                    <canvas id="canvas"></canvas>
+
+                    <img id="photo" alt="Captured photo">
+
+                    <p>LOVE THIS MOMENT</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="right-side">
+
+            <h2>PHOTO BOOTH</h2>
+
+            <div class="camera-heading">
+                <h3>YOUR CAMERA</h3>
+                <p>Get ready for your moment</p>
+            </div>
+
+            <div class="filter-area">
+                <label for="filter">CHOOSE YOUR FILTER</label>
+
+                <select id="filter">
+                    <option value="none">Original</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="bw">Black & White</option>
+                    <option value="sepia">Sepia</option>
+                    <option value="warm">Warm</option>
+                    <option value="cool">Cool</option>
+                </select>
+            </div>
+
+            <div class="buttons">
+                <button id="startCamera">OPEN CAMERA</button>
+                <button id="takePhoto">TAKE PHOTO</button>
+                <button id="retakePhoto">RETAKE</button>
+            </div>
+
+            <div class="download-buttons">
+                <button id="downloadPhoto">DOWNLOAD PHOTO</button>
+                <button id="downloadStrip">DOWNLOAD PHOTO STRIP</button>
+            </div>
+
+            <div class="strip-section">
+
+                <h3>YOUR PHOTO STRIP</h3>
+                <p>Capture 4 moments</p>
+
+                <div class="strip" id="strip">
+                    <div class="strip-photo">01</div>
+                    <div class="strip-photo">02</div>
+                    <div class="strip-photo">03</div>
+                    <div class="strip-photo">04</div>
+                    <p>BY IFRAA STUDIO</p>
+                </div>
+
+                <p id="photoCount">0 / 4 PHOTOS</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>MADE WITH LOVE · BY IFRAA STUDIO</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
